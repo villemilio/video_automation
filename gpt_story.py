@@ -45,10 +45,9 @@ def fetch_short_story():
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a creative and engaging storyteller."},
-                {"role": "user", "content": "Create a Reddit-style post with a question like 'Tell me about a time when...' followed by a 2-3 minute compelling story. Format it as:\n\nQuestion: <question>\n\nStory: <story>"}
+                {"role": "user", "content": "Create a Reddit-style post with a question like 'Tell me about a time when...' followed by a 2-3 minute engaging and interesting thriller. The story needs is for entertainmnet purposes. Format it as:\n\nQuestion: <question>\n\nStory: <story>"}
             ],
             temperature=0.9,
-            max_tokens=500
         )
 
         # Extract response
